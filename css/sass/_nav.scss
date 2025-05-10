@@ -1,0 +1,29 @@
+nav {
+    background-color: $nav-bg;
+  
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      padding: 10px;
+      @include transition(color, 2s);
+  
+      &:hover {
+        color: $link-hover;
+      }
+  
+      &.active {
+        color: $link-active;
+      }
+    }
+  }
+  
